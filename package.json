@@ -18,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/LuLiang0307/qq-music/issues"
     },
-    "homepage": "https://github.com/LuLiang0307/qq-music#readme"
+    "homepage": "https://github.com/LuLiang0307/qq-music#readme",
+    "dependencies": {
+        "node-sass": "^4.14.1"
+    }
 }

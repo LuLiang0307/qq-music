@@ -1,0 +1,7 @@
+@import "./var";
+@import "./reset";
+@import "./rec";
+@import "./header";
+body {
+    background: $body-background;
+}
