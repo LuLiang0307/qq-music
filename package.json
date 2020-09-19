@@ -1,0 +1,22 @@
+{
+    "name": "qq-music",
+    "version": "1.0.0",
+    "description": "qq music",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LuLiang0307/qq-music.git"
+    },
+    "author": {
+        "name": "Lucia",
+        "email": "2313970630@qq.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LuLiang0307/qq-music/issues"
+    },
+    "homepage": "https://github.com/LuLiang0307/qq-music#readme"
+}
