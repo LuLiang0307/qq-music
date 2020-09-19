@@ -3,15 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>QQ 音乐</title>
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <header id="header">
         <img src="./images/logo.png" alt="logo" id="logo">
     </header>
+    <section id="swipper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/slides-01.png" alt="slides-01" width=400></div>
+                <div class="swiper-slide"><img src="./images/slides-02.png" alt="slides-02" width=400></div>
+                <div class="swiper-slide"><img src="./images/slides-03.png" alt="slides-03" width=400></div>
+                <div class="swiper-slide"><img src="./images/slides-04.png" alt="slides-04" width=400></div>
+                <div class="swiper-slide"><img src="./images/slides-05.png" alt="slides-05" width=400></div>
+                <div class="swiper-slide"><img src="./images/slides-06.png" alt="slides-06" width=400></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

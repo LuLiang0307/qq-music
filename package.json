@@ -20,6 +20,7 @@
     },
     "homepage": "https://github.com/LuLiang0307/qq-music#readme",
     "dependencies": {
-        "node-sass": "^4.14.1"
+        "node-sass": "^4.14.1",
+        "swiper": "^6.2.0"
     }
 }
