@@ -13,5 +13,34 @@ body {
     height: 25px;
     margin-left: 10px; }
 
+.navbar .nav-list {
+  display: flex;
+  text-align: center; }
+  .navbar .nav-list .nav-item {
+    flex: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    line-height: 40px; }
+    .navbar .nav-list .nav-item.active {
+      color: #31c27c; }
+    .navbar .nav-list .nav-item.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #31c27c; }
+
+.hide {
+  display: none; }
+
 body {
   background: #f4f4f4; }
+
+ul,
+ol li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }

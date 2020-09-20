@@ -1,0 +1,25 @@
+.navbar {
+    .nav-list {
+        display: flex;
+        text-align: center;
+        .nav-item {
+            flex: 1;
+            position: relative;
+            color: $nav-item-color;
+            height: $nav-item-height;
+            line-height: $nav-item-height;
+            &.active {
+                color: $nav-item-active;
+            }
+            &.active::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background: $nav-item-active;
+            }
+        }
+    }
+}

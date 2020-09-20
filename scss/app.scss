@@ -2,6 +2,15 @@
 @import "./reset";
 @import "./rec";
 @import "./header";
+@import "./navbar";
+@import "./helper";
 body {
     background: $body-background;
+}
+
+ul,
+ol li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
