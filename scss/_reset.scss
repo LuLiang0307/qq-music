@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+ol {
     margin: 0px;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
 }

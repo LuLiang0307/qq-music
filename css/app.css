@@ -1,8 +1,121 @@
+@charset "UTF-8";
+/*新的样式*/
 * {
   box-sizing: border-box; }
 
-body {
-  margin: 0px; }
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+ol {
+  margin: 0px;
+  padding: 0; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+main {
+  display: block; }
+  main .mod .mui-title {
+    margin: 20px 17px 13px 17px; }
+    main .mod .mui-title .mui-title-text {
+      font-size: 20px;
+      color: #1a1a1a; }
+  main .mod .mui-scroll {
+    display: block; }
+    main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-media {
+      position: relative; }
+      main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-media .zone-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.1); }
+        main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-media .zone-info .zone-info-bd {
+          position: absolute;
+          right: 10px;
+          bottom: -3px;
+          left: 10px;
+          display: flex;
+          align-items: center; }
+          main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-media .zone-info .zone-info-bd .zone-info-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            margin-right: 6px; }
+          main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-media .zone-info .zone-info-bd .zone-info-name {
+            display: block;
+            font-weight: 500;
+            font-size: 17px;
+            color: #fff;
+            margin: 5px 0 0 43px;
+            white-space: normal; }
+    main .mod .mui-scroll .mui-list.zoneList .mui-lilst-item .mui-list-box.zone .list-bd .mui-list-title {
+      margin-top: 15px; }
+    main .mod .mui-scroll .mui-list {
+      margin: 11px 15px;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap; }
+      main .mod .mui-scroll .mui-list .mui-lilst-item {
+        margin: 0 4px;
+        width: auto; }
+        main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box.zone {
+          width: 240px; }
+        main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box {
+          width: 120px; }
+          main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media {
+            position: relative;
+            height: 120px; }
+            main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media img.zone {
+              width: 240px; }
+            main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              width: 120px;
+              border-radius: 10px;
+              object-fit: cover; }
+            main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media .list-play-cont {
+              position: absolute;
+              bottom: 0px;
+              right: 0;
+              z-index: 5;
+              height: 15px;
+              min-width: 14px;
+              padding: 0 7px;
+              border-radius: 9px;
+              background: rgba(0, 0, 0, 0.4);
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media .list-play-cont i {
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-image: url("../images/icon-play-new.png");
+                background-size: cover;
+                background-repeat: no-repeat; }
+              main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-media .list-play-cont span {
+                display: block;
+                margin-left: 2px;
+                line-height: normal;
+                font-size: 11px;
+                font-weight: 300;
+                color: #fff; }
+          main .mod .mui-scroll .mui-list .mui-lilst-item .mui-list-box .list-bd .mui-list-title {
+            font-weight: normal;
+            font-size: 14px;
+            color: #A8A8A8;
+            white-space: normal; }
 
 #header {
   display: flex;
@@ -13,34 +126,174 @@ body {
     height: 25px;
     margin-left: 10px; }
 
-.navbar .nav-list {
-  display: flex;
-  text-align: center; }
-  .navbar .nav-list .nav-item {
-    flex: 1;
-    position: relative;
-    color: rgba(0, 0, 0, 0.6);
-    height: 40px;
-    line-height: 40px; }
-    .navbar .nav-list .nav-item.active {
-      color: #31c27c; }
-    .navbar .nav-list .nav-item.active::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background: #31c27c; }
+.header .header-bar {
+  z-index: 100;
+  background: #FAFAFA; }
+  .header .header-bar section.top-operation-bar {
+    padding: 0 15px 0 22px;
+    height: 58px; }
+    .header .header-bar section.top-operation-bar .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%; }
+      .header .header-bar section.top-operation-bar .box .logo {
+        width: 35px;
+        height: 35px;
+        background-color: #fff; }
+        .header .header-bar section.top-operation-bar .box .logo img {
+          width: 27px;
+          height: 27px; }
+      .header .header-bar section.top-operation-bar .box .text {
+        flex: 1; }
+        .header .header-bar section.top-operation-bar .box .text .text-title {
+          font-size: 17px;
+          color: #000;
+          font-weight: 400;
+          white-space: normal; }
+        .header .header-bar section.top-operation-bar .box .text .text-subtitle {
+          color: #888;
+          font-size: 13px;
+          padding: 2px 0; }
+      .header .header-bar section.top-operation-bar .box .btn {
+        height: 27px;
+        line-height: 25px;
+        padding: 0 17px;
+        text-align: center;
+        font-size: 14px;
+        color: #888;
+        border: solid 1px #d8d8d8;
+        border-radius: 999px;
+        cursor: pointer; }
+  .header .header-bar section.top-tab-bar {
+    height: 45px; }
+    .header .header-bar section.top-tab-bar nav.tab .tab-bd {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header .header-bar section.top-tab-bar nav.tab .tab-bd .tab-rec {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50px;
+        top: 50%;
+        color: #A8A8A8; }
+        .header .header-bar section.top-tab-bar nav.tab .tab-bd .tab-rec.active {
+          color: #22D59C; }
+          .header .header-bar section.top-tab-bar nav.tab .tab-bd .tab-rec.active::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            bottom: 4px;
+            left: 50%;
+            margin-left: -9px;
+            border: 2px solid #22D59C;
+            border-radius: 4px; }
 
 .hide {
   display: none; }
 
+.search-bar {
+  margin-top: 10px;
+  display: flex; }
+  .search-bar .search-bar-bd {
+    flex: 1;
+    margin: 0 50px;
+    position: relative; }
+    .search-bar .search-bar-bd .search-icon {
+      position: absolute;
+      top: 0px;
+      left: 50%; }
+    .search-bar .search-bar-bd .search-input-cont {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 3px; }
+
+.rank-view .rank-list {
+  margin-top: 22px; }
+  .rank-view .rank-list .rank-list-item {
+    background: white;
+    border-radius: 8px 0 0 8px;
+    margin: 0 17px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .rank-view .rank-list .rank-list-item .text {
+      flex: 1; }
+      .rank-view .rank-list .rank-list-item .text h2 {
+        margin: 0 13px 4px;
+        font-size: 17px; }
+      .rank-view .rank-list .rank-list-item .text ol li {
+        text-overflow: ellipsis;
+        margin: 0 13px 4px;
+        font-size: 13px; }
+        .rank-view .rank-list .rank-list-item .text ol li .song-name {
+          color: #1a1a1a; }
+        .rank-view .rank-list .rank-list-item .text ol li .singer {
+          color: rgba(26, 26, 26, 0.5); }
+    .rank-view .rank-list .rank-list-item .media {
+      width: 114px;
+      height: 114px;
+      position: relative; }
+      .rank-view .rank-list .rank-list-item .media img {
+        position: absolute;
+        border-radius: 0 8px 8px 0;
+        width: 100%;
+        height: 100%; }
+      .rank-view .rank-list .rank-list-item .media .rank-update {
+        position: absolute;
+        font-size: 12px;
+        color: #fff;
+        top: 2px;
+        right: 2px; }
+      .rank-view .rank-list .rank-list-item .media .list-play-cont {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        z-index: 5;
+        height: 15px;
+        min-width: 14px;
+        padding: 0 7px;
+        border-radius: 9px;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .rank-view .rank-list .rank-list-item .media .list-play-cont i.list-play-icon {
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-image: url("../images/icon-play-new.png");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        .rank-view .rank-list .rank-list-item .media .list-play-cont .list-play-num {
+          display: block;
+          margin-left: 2px;
+          line-height: normal;
+          font-size: 11px;
+          font-weight: 300;
+          color: #fff; }
+
 body {
-  background: #f4f4f4; }
+  background: #F6F6F6; }
 
 ul,
 ol li {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+* {
+  font-family: -apple-system, sans-serif; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }

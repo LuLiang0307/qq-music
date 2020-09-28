@@ -6,49 +6,90 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>QQ 音乐</title>
     <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
-    <header id="header">
-        <img src="./images/logo.png" alt="logo" id="logo">
-    </header>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item active" data-role="tab" data-view=".rec-view">推荐</li>
-            <li class="nav-item" data-role="tab" data-view=".rank-view">排行版</li>
-            <li class="nav-item" data-role="tab" data-view=".search-view">搜索</li>
-        </ul>
-    </nav>
-    <div>
-        <div class="rec-view tab-content">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./images/slides-01.png" alt="slides-01" width=400></div>
-                    <div class="swiper-slide"><img src="./images/slides-02.png" alt="slides-02" width=400></div>
-                    <div class="swiper-slide"><img src="./images/slides-03.png" alt="slides-03" width=400></div>
-                    <div class="swiper-slide"><img src="./images/slides-04.png" alt="slides-04" width=400></div>
-                    <div class="swiper-slide"><img src="./images/slides-05.png" alt="slides-05" width=400></div>
-                    <div class="swiper-slide"><img src="./images/slides-06.png" alt="slides-06" width=400></div>
-                </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="rank-view tab-content hide">排行版</div>
-        <div class="search-view tab-content hide">搜索</div>
+    <div id="root">
+        <article>
+            <header class="header">
+                <section class="header-bar">
+                    <section class="top-operation-bar">
+                        <div class="box">
+                            <span class="logo"><img src="./images/logo.svg" alt="QQ音乐"></span>
+                            <div class="text">
+                                <h2 class="text-title">QQ音乐</h2>
+                                <p class="text-subtitle">打开APP收藏下载</p>
+                            </div>
+                            <a class="btn" href="javascript:;">下载APP</a>
+
+                        </div>
+                    </section>
+                    <section class="top-tab-bar">
+                        <nav class="tab">
+                            <div class="tab-bd">
+                                <span class="tab-rec text active" data-role="tab" data-view=".rec-view">推荐</span>
+                                <span class="tab-rec text" data-role="tab" data-view=".rank-view">排行版</span>
+                            </div>
+                        </nav>
+                    </section>
+                </section>
+                <section class="tab-cont" style="display: block;">
+                    <section class="rec-view">
+                        <div>
+                            <section class="search-bar">
+                                <div class="search-bar-bd">
+                                    <svg class="search-icon icon" aria-hidden="true">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                                    <!-- <span class="search-text">搜索</span> -->
+                                    <input type="text" class="search-bar-cont">
+                                </div>
+                            </section>
+                        </div>
+                        <main>
+                            <section class="mod">
+                                <section class="mui-title">
+                                    <h2 class="mui-title-text">官方歌单</h2>
+                                </section>
+                                <section class="mui-scroll">
+                                    <ul class=" mui-list officialPlaylist">
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="mod">
+                                <section class="mui-title">
+                                    <h2 class="mui-title-text">达人歌单</h2>
+                                </section>
+                                <section class="mui-scroll">
+                                    <ul class="mui-list ugcPlaylist">
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="mod">
+                                <section class="mui-title">
+                                    <h2 class="mui-title-text">专区</h2>
+                                </section>
+                                <section class="mui-scroll">
+                                    <ul class="mui-list zoneList">
+                                    </ul>
+                                </section>
+                            </section>
+                        </main>
+                    </section>
+                    <section class="rank-view" style="display: none;">
+                        <ul class="rank-list">
+
+                        </ul>
+                    </section>
+                </section>
+            </header>
+        </article>
     </div>
 
-    </section>
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js">
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script>
-    <script src="./scripts/main.js"></script>
+    <script src="//at.alicdn.com/t/font_2098627_gnlj9s4vsou.js"></script>
+    <script src="./scripts/lazyload.js"></script>
     <script src="./scripts/tab.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

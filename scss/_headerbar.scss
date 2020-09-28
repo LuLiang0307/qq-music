@@ -1,0 +1,84 @@
+.header {
+    .header-bar {
+        z-index: 100;
+        background: #FAFAFA;
+        section.top-operation-bar {
+            padding: 0 15px 0 22px;
+            height: 58px;
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                height: 100%;
+                .logo {
+                    width: 35px;
+                    height: 35px;
+                    background-color: #fff;
+                    img {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+                .text {
+                    flex: 1;
+                    .text-title {
+                        font-size: 17px;
+                        color: #000;
+                        font-weight: 400;
+                        white-space: normal;
+                    }
+                    .text-subtitle {
+                        color: #888;
+                        font-size: 13px;
+                        padding: 2px 0;
+                    }
+                }
+                .btn {
+                    height: 27px;
+                    line-height: 25px;
+                    padding: 0 17px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #888;
+                    border: solid 1px #d8d8d8;
+                    border-radius: 999px;
+                    cursor: pointer;
+                }
+            }
+        }
+        section.top-tab-bar {
+            height: 45px;
+            nav.tab {
+                .tab-bd {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .tab-rec {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        height: 50px;
+                        top: 50%;
+                        color: #A8A8A8;
+                        &.active {
+                            color: #22D59C;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 18px;
+                                bottom: 4px;
+                                left: 50%;
+                                margin-left: -9px;
+                                border: 2px solid #22D59C;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+main {
+    display: block;
+    .mod {
+        .mui-title {
+            margin: 20px 17px 13px 17px;
+            .mui-title-text {
+                font-size: 20px;
+                color: rgba(26, 26, 26, 1);
+            }
+        }
+        .mui-scroll {
+            display: block;
+            .mui-list.zoneList {
+                .mui-lilst-item {
+                    .mui-list-box.zone {
+                        .list-media {
+                            position: relative;
+                            .zone-info {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                z-index: 2;
+                                background: rgba(0, 0, 0, .1);
+                                .zone-info-bd {
+                                    position: absolute;
+                                    right: 10px;
+                                    bottom: -3px;
+                                    left: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    .zone-info-img {
+                                        width: 36px;
+                                        height: 36px;
+                                        border-radius: 100%;
+                                        margin-right: 6px;
+                                    }
+                                    .zone-info-name {
+                                        display: block;
+                                        font-weight: 500;
+                                        font-size: 17px;
+                                        color: #fff;
+                                        margin: 5px 0 0 43px;
+                                        white-space: normal;
+                                    }
+                                }
+                            }
+                        }
+                        .list-bd {
+                            .mui-list-title {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .mui-list {
+                margin: 11px 15px;
+                display: flex;
+                align-items: center;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                .mui-lilst-item {
+                    margin: 0 4px;
+                    width: auto;
+                    .mui-list-box.zone {
+                        width: 240px;
+                    }
+                    .mui-list-box {
+                        width: 120px;
+                        .list-media {
+                            position: relative;
+                            height: 120px;
+                            img.zone {
+                                width: 240px;
+                            }
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 1;
+                                width: 120px;
+                                border-radius: 10px;
+                                object-fit: cover;
+                            }
+                            .list-play-cont {
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0;
+                                z-index: 5;
+                                height: 15px;
+                                min-width: 14px;
+                                padding: 0 7px;
+                                border-radius: 9px;
+                                background: rgba(0, 0, 0, .4);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                i {
+                                    display: block;
+                                    width: 10px;
+                                    height: 10px;
+                                    background-image: url("../images/icon-play-new.png");
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                }
+                                span {
+                                    display: block;
+                                    margin-left: 2px;
+                                    line-height: normal;
+                                    font-size: 11px;
+                                    font-weight: 300;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .list-bd {
+                            .mui-list-title {
+                                font-weight: normal;
+                                font-size: 14px;
+                                color: #A8A8A8;
+                                white-space: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

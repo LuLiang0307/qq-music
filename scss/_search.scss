@@ -1,0 +1,26 @@
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    .search-bar-bd {
+        flex: 1;
+        margin: 0 50px;
+        position: relative;
+        .search-icon {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+        }
+        // .search-text {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 50%;
+        // }
+        .search-input-cont {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 3px;
+        }
+    }
+}
