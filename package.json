@@ -20,7 +20,11 @@
     },
     "homepage": "https://github.com/LuLiang0307/qq-music#readme",
     "dependencies": {
+        "express": "^4.17.1",
         "node-sass": "^4.14.1",
+        "nodemon": "^2.0.4",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.6",
         "swiper": "^6.2.0"
     }
 }

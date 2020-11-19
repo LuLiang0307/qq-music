@@ -36,17 +36,25 @@
                 <section class="tab-cont" style="display: block;">
                     <section class="rec-view">
                         <div>
-                            <section class="search-bar">
+                            <section class="search-view" id="search-view">
                                 <div class="search-bar-bd">
-                                    <svg class="search-icon icon" aria-hidden="true">
-                                    <use xlink:href="#icon-search"></use>
-                                </svg>
-                                    <!-- <span class="search-text">搜索</span> -->
-                                    <input type="text" class="search-bar-cont">
+                                    <div class="search_cont">
+                                        <svg class="search-icon icon focus" aria-hidden="true">
+                                        <use xlink:href="#icon-search"></use>
+                                        </svg>
+                                        <input type="search" class="search-bar-cont focus   " id="search" placeholder="搜索">
+                                    </div>
                                 </div>
+                                <span class="cancel">取消</span>
+                            </section>
+                            <section class="search-cont" style="display: none;">
+                                <section class="search-result">
+                                    <ul class="song-list">
+                                    </ul>
+                                </section>
                             </section>
                         </div>
-                        <main>
+                        <main style="display: none;">
                             <section class="mod">
                                 <section class="mui-title">
                                     <h2 class="mui-title-text">官方歌单</h2>
@@ -77,18 +85,17 @@
                         </main>
                     </section>
                     <section class="rank-view" style="display: none;">
-                        <ul class="rank-list">
-
-                        </ul>
+                        <ul class="rank-list"></ul>
                     </section>
                 </section>
             </header>
         </article>
     </div>
 
-    <script src="//at.alicdn.com/t/font_2098627_gnlj9s4vsou.js"></script>
+    <script src="//at.alicdn.com/t/font_2127526_4rdje6f3p3x.js"></script>
     <script src="./scripts/lazyload.js"></script>
     <script src="./scripts/tab.js"></script>
+    <script src="./scripts/search.js"></script>
     <script src="./scripts/app.js"></script>
 </body>
 

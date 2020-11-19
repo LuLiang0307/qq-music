@@ -17,6 +17,9 @@ a,
 a:hover {
   text-decoration: none; }
 
+input {
+  outline: ivory; }
+
 main {
   display: block; }
   main .mod .mui-title {
@@ -196,23 +199,49 @@ main {
 .hide {
   display: none; }
 
-.search-bar {
-  margin-top: 10px;
-  display: flex; }
-  .search-bar .search-bar-bd {
+.search-view {
+  margin-top: 20px;
+  display: flex;
+  height: 35px; }
+  .search-view .search-bar-bd {
+    background-color: white;
+    border-radius: 10px;
     flex: 1;
-    margin: 0 50px;
+    margin: 0 16px;
     position: relative; }
-    .search-bar .search-bar-bd .search-icon {
+    .search-view .search-bar-bd .search_cont .search-icon {
+      width: 20px;
+      height: 20px;
       position: absolute;
-      top: 0px;
-      left: 50%; }
-    .search-bar .search-bar-bd .search-input-cont {
+      top: 8px;
+      left: 50%;
+      margin-left: -44px;
+      z-index: 1; }
+      .search-view .search-bar-bd .search_cont .search-icon.focus {
+        position: absolute;
+        top: 25%;
+        left: 48px;
+        z-index: 1; }
+    .search-view .search-bar-bd .search_cont .search-bar-cont {
       position: absolute;
-      top: 0;
-      left: 0;
+      border: 1px solid white;
+      height: 33px;
       width: 100%;
-      border-radius: 3px; }
+      border-radius: 10px; }
+      .search-view .search-bar-bd .search_cont .search-bar-cont::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 15px; }
+      .search-view .search-bar-bd .search_cont .search-bar-cont.focus {
+        padding-left: 20px; }
+        .search-view .search-bar-bd .search_cont .search-bar-cont.focus::-webkit-input-placeholder {
+          text-align: left;
+          font-size: 15px; }
+  .search-view span.cancel {
+    font-weight: 700;
+    font-size: 15px;
+    height: 33px;
+    line-height: 32px;
+    padding: 0 18px; }
 
 .rank-view .rank-list {
   margin-top: 22px; }

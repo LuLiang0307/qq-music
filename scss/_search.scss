@@ -1,26 +1,68 @@
-.search-bar {
-    margin-top: 10px;
+.search-view {
+    margin-top: 20px;
     display: flex;
+    height: 35px;
     .search-bar-bd {
+        background-color: white;
+        border-radius: 10px;
         flex: 1;
-        margin: 0 50px;
+        margin: 0 16px;
         position: relative;
-        .search-icon {
-            position: absolute;
-            top: 0px;
-            left: 50%;
+        .search_cont {
+            .search-icon {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 8px;
+                left: 50%;
+                margin-left: -44px;
+                z-index: 1;
+                &.focus {
+                    position: absolute;
+                    top: 25%;
+                    left: 48px;
+                    z-index: 1;
+                }
+            }
+            .search-bar-cont {
+                position: absolute;
+                border: 1px solid white;
+                height: 33px;
+                width: 100%;
+                border-radius: 10px;
+                &::-webkit-input-placeholder {
+                    text-align: center;
+                    font-size: 15px;
+                }
+                &.focus {
+                    padding-left: 20px;
+                    &::-webkit-input-placeholder {
+                        text-align: left;
+                        font-size: 15px;
+                    }
+                }
+            }
         }
-        // .search-text {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 50%;
+        // div {
+        //     text-align: center;
+        //     .search_cont {
+        //         display: inline-block;
+        //         position: absolute;
+        //         top: 0;
+        //         left: auto;
+        //         line-height: 33px;
+        //         .search-text {
+        //             font-size: 15px;
+        //             color: #A8A8A8;
+        //         }
+        //     }
         // }
-        .search-input-cont {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            border-radius: 3px;
-        }
+    }
+    span.cancel {
+        font-weight: 700;
+        font-size: 15px;
+        height: 33px;
+        line-height: 32px;
+        padding: 0 18px;
     }
 }

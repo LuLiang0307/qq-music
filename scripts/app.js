@@ -14,6 +14,7 @@
         renderZoneList(json.homeData.zoneList)
         lazyload(document.querySelectorAll('.lazyload'))
     }
+    let search = new Search(document.querySelector("#search-view"))
 
     function renderOfficialPlaylist(list) {
         document.querySelector('.mod .mui-scroll .officialPlaylist').innerHTML = list.map(list => `
@@ -82,7 +83,7 @@
                         </ol>
                     </div>
                     <div class="media">
-                        <img class="rank-list-img" src=${item1.headPicUrl}>
+                        <img class="rank-list-img lazyload" src="${item1.headPicUrl}">
                         <span class="rank-update">${item1.updateTips}</span>
                         <div class="list-play-cont">
                             <i class="list-play-icon"></i>
@@ -92,6 +93,8 @@
                 </li>`
             )
         )
+
+        lazyload(document.querySelectorAll(".rank-view .rank-list .lazyload"))
 
         function songlist(song) {
             return song.map(item =>
